@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import "leaflet/dist/leaflet.css";
 
@@ -55,9 +55,8 @@ const data = [
 
 const position = [51.505, -0.09]
 
-
-
 export default function Page() {
+
     return <>
 
         <div className="container text-center my-5">
@@ -118,7 +117,6 @@ export default function Page() {
             </div>
 
         </div>
-
 
     </>
 
